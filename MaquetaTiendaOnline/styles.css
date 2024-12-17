@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr, 1fr);
+    grid-auto-rows: minmax(2em, auto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button.btn {
+    border: none; 
+    color: white; 
+    padding: 1em 1em 1em 1em;
+    margin-top: 2em;
+    cursor: pointer; 
+    border-radius: 5px;
+}
+
+.primary {
+    background-color: #007bff;
+} 
+.primary:hover {
+    background: #0b7dda;
+}
+
+img.logo {
+    height: 100px;
+    width: 140px;
+}
+
+.title h1 {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2.9em;
+}
+
+header.title {
+    background-color: #3e3e3e;
+    grid-column: 1 / 4;
+    display: flex;
+    padding: 0 1em 0 1em;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: #098BD6;
+}
+
+article h2 {
+    color: black;
+    font-size: 2rem;
+    font-family: fantasy;
+}
+
+nav.browser {
+    background-color: #DF853E;
+    grid-column: 1 / 4;
+    padding: 1em 0em 1em 0em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul.nav {
+    list-style-type: none;
+    display: flex;
+}
+
+ul.nav li {
+    display: inline;
+    margin-right: 2em;
+}
+
+ul.nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.50rem;
+}
+
+ul.nav li a:hover {
+    color: #098BD6;
+}
+
+aside.menu {
+    background-color: #3e3e3e;
+    padding: 2em 2em 2em 2em;
+}
+
+aside.menu li {
+    list-style: none;
+    padding: 3em 0 3em 0;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: #b14502;
+    font-size: 2.30rem;
+}
+
+aside.menu li a {
+    text-decoration: none;
+}
+
+aside h2 {
+    color: #DF853E;
+    font-size: 4.10rem;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: repeat(4, 1fr);
+    text-align: center;
+    background-color: cornsilk;
+}
+
+main article {
+    padding: 1em 0 1em 0;
+}
+
+img.content {
+    height: 200px;
+    width: 500px;
+    margin: 1em;
+}
+
+div.image1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1em;
+}
+
+div.image2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1em;
+}
+
+footer {
+    background-color: #DF853E;
+    grid-column: 1 / 4;
+    padding: 1em 2em 2em 2em;
+}
+
+footer.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #e5e5e5;
+}
+
+footer h3 {
+    font-weight: bolder;
+    font-size: 2.10rem;
+    color: black;
+}
